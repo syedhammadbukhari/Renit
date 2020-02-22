@@ -1,0 +1,74 @@
+<resources>
+    <string name="app_name">Renit</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="renit">Renit</string>
+    <string name="sign_in_or_sign_up_to_continue">Sign in or sign up to continue</string>
+    <string name="mobile_number">Mobile number</string>
+    <string name="facebook">Facebook</string>
+    <string name="or_continue_with">Or continue with</string>
+    <string name="_continue">Continue</string>
+    <string name="google">Google</string>
+    <string name="by_signing_up_you_are_agree_to_our">By signing up, you are agree to our terms and conditions</string>
+    <string name="enter_full_name">Enter full name</string>
+    <string name="enter_email_id">Enter Email id</string>
+    <string name="enter_mobile_number">Enter Mobile number</string>
+    <string name="password">Password</string>
+    <string name="forget_password">Forget Password?</string>
+
+    <string name="Electronic_Type_String">Choose Electronic Type</string>
+
+    <string-array name="Electronic_Type_Array">
+        <item>Camera</item>
+        <item>Generator</item>
+        <item>Air Cooler</item>
+        <item>Chillers</item>
+        <item>Screens</item>
+        <item>Others</item>
+    </string-array>
+    <string name="Men_Wear_Dress_Type_String">Choose Dress Type</string>
+
+    <string-array name="Men_Wear_Dress_Type_Array">
+        <item>Pent Coat</item>
+        <item>Sherwani</item>
+        <item>Shalwar Kameez</item>
+        <item>Kurta</item>
+        <item>Turban</item>
+        <item>Dhoti</item>
+    </string-array>
+
+    <string name="Men_Wear_Dress_Size_String">Choose Size</string>
+
+    <string-array name="Men_Wear_Dress_Size_Array">
+        <item>S</item>
+        <item>M</item>
+        <item>L</item>
+        <item>XL</item>
+    </string-array>
+
+    <string name="Women_Wear_Dress_Type_String">Choose Dress Type</string>
+
+    <string-array name="Women_Wear_Dress_Type_Array">
+        <item>Lehenga</item>
+        <item>Saree</item>
+        <item>Necklace</item>
+        <item></item>
+        <item>Turban</item>
+        <item>Dhoti</item>
+    </string-array>
+
+    <string name="Marriage_Hall_Type_String">Choose Dress Type</string>
+
+    <string-array name="Marriage_Hall_Type_Array">
+        <item>Marquee</item>
+        <item>Banquet Hall</item>
+        <item>Farm House</item>
+        <item>Park</item>
+        <item>Restaurant</item>
+        <item>Mansion</item>
+        <item>Country Club</item>
+    </string-array>
+
+
+</resources>

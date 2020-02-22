@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:background="@color/colortop"
+            android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Details"
+        android:textColor="@android:color/white"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:padding="10dp"
+        >
+        <TextView
+            android:layout_weight="0.2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:textSize="25sp"
+            android:layout_marginTop="5dp"
+            />
+        <EditText
+            android:padding="20dp"
+            android:textSize="25sp"
+            android:id="@+id/title_Marriage_Hall_id"
+            android:layout_weight="0.7"
+            android:hint="Title of your Hall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:padding="@dimen/dp_10"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:text="Select Type"
+            android:textSize="20sp"
+            />
+        <Spinner
+            android:layout_weight="0"
+            android:id="@+id/Type_Marriage_Hall_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/Marriage_Hall_Type_Array"
+            android:prompt="@string/Marriage_Hall_Type_String"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:padding="@dimen/dp_10"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:text="Capacity"
+            android:textSize="20sp"
+            />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:hint="Enter your sitting capacity"
+            android:textSize="@dimen/sp_20"
+            android:id="@+id/Capacity_Marriage_Hall_id"
+            />
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        android:textSize="25sp"
+        android:layout_marginTop="5dp"
+        />
+
+    <EditText
+        android:padding="20dp"
+        android:textSize="25sp"
+        android:id="@+id/Description_Marriage_Hall_id"
+        android:layout_width="match_parent"
+        android:hint="Key features of your hall"
+        android:layout_height="150dp"
+        />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@color/colortop"
+        android:text="Next"
+        android:textColor="@android:color/white"
+        android:textSize="25sp"
+        android:id="@+id/next_btn_Marriage_Hall_id"
+        />
+
+</LinearLayout>

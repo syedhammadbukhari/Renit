@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/dp_10">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:id="@+id/singleLayout_id">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_weight="0.2"
+            android:id="@+id/imageView_newsfeed_home"
+            android:layout_width="0dp"
+            android:src="@android:drawable/star_big_on"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User_name"
+        android:layout_weight="0.6"
+        android:textColor="@android:color/black"
+        android:textSize="16dp"
+        android:gravity="center_vertical"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/UserName_newsfeed_home"
+        android:layout_marginLeft="10dp"/>
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_weight="0.2"
+        android:src="@drawable/like_vector"
+        android:id="@+id/like_newsfeed_home"
+        />
+</LinearLayout>
+<RelativeLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:id="@+id/singleLayout_id2"
+android:layout_below="@+id/singleLayout_id">
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:id="@+id/imageView2_newsfeed_home"/>
+</RelativeLayout>
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:id="@+id/singleLayout_id3"
+android:layout_below="@+id/singleLayout_id2"
+android:weightSum="1">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Product_Title"
+    android:textColor="@android:color/black"
+    android:textSize="16dp"
+    android:id="@+id/productTitle_newsfeed_home"
+    android:layout_marginLeft="13dp"
+    android:layout_marginTop="10dp"
+    android:layout_weight="0.9"
+    />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Product_Price"
+    android:textColor="@android:color/black"
+    android:textSize="16dp"
+    android:id="@+id/productPrice_newsfeed_home"
+    android:layout_marginLeft="13dp"
+    android:layout_marginTop="10dp" />
+</LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "259741185747",
+    "firebase_url": "https://renit-604a8.firebaseio.com",
+    "project_id": "renit-604a8",
+    "storage_bucket": "renit-604a8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:259741185747:android:085d7b928a4333b2120626",
+        "android_client_info": {
+          "package_name": "com.example.renit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "259741185747-o0orrhqbve2a8k5elf59cf5v9gjhtkae.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.renit",
+            "certificate_hash": "8102be316dab8b859f1b192a02d1a55f0c530b26"
+          }
+        },
+        {
+          "client_id": "259741185747-bia7p5et68b5220j1cl2h1sfl6sgl2jt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPY4BbhYSRAQSkoWpAao6UN7CYJi3AHHQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "259741185747-bia7p5et68b5220j1cl2h1sfl6sgl2jt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

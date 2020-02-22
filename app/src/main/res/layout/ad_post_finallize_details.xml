@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Renit"
+        android:textSize="@dimen/sp_40"
+        android:layout_marginBottom="@dimen/dp_10"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:textSize="@dimen/dp_30"
+        android:textAlignment="center"
+        android:id="@+id/title_ad_post_finalize_details_id"
+        android:layout_marginBottom="@dimen/dp_10"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ID"
+        android:textSize="@dimen/dp_20"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:layout_weight=".04"
+        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Replacing ID"
+            android:textSize="@dimen/dp_20"
+            android:id="@+id/ID_No_ad_post_finalize_details_id"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:layout_weight=".5"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date and Time"
+        android:textSize="@dimen/dp_20"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:layout_weight=".1"
+        />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Replacing Date and Time"
+            android:textSize="@dimen/dp_20"
+            android:id="@+id/Date_and_Time_ad_post_finalize_details_id"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:layout_weight=".5"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textSize="@dimen/dp_20"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:layout_weight=".05"
+        />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Replacing Name"
+            android:textSize="@dimen/dp_20"
+            android:id="@+id/Name_ad_post_finalize_details_id"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:layout_weight=".7"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone No"
+        android:textSize="@dimen/dp_20"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:layout_weight=".07"
+        />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Replacing Phone No"
+            android:textSize="@dimen/dp_20"
+            android:id="@+id/Phone_No_ad_post_finallize_details_id"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:layout_weight=".07"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price"
+        android:textSize="@dimen/dp_20"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:layout_weight=".06"
+        />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Replacing  Price"
+            android:textSize="@dimen/dp_20"
+            android:id="@+id/Price_ad_post_finalize_details_id"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:layout_weight=".06"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location"
+        android:textSize="@dimen/dp_20"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:layout_weight=".06"
+        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Replacing Location"
+            android:textSize="@dimen/dp_20"
+            android:id="@+id/Location_ad_post_finalize_details_id"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:layout_weight=".06"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:gravity="center"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/dp_120"
+            android:text="Post"
+            android:id="@+id/post_btn_ad_post_finalize_details_id"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="@dimen/dp_120"
+            android:text="Edit"
+            android:id="@+id/edit_btn_ad_post_finalize_details_id"
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>

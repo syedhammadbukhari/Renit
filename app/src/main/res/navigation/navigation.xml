@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/home">
+
+    <fragment
+        android:id="@+id/chat"
+        android:name="com.example.renit.fragments.ChatFragment"
+        android:label="fragment_chat"
+        tools:layout="@layout/fragment_chat" />
+    <fragment
+        android:id="@+id/myAds"
+        android:name="com.example.renit.MyAds.MyAds"
+        android:label="fragment_my_ads"
+        tools:layout="@layout/fragment_my_ads" />
+    <fragment
+        android:id="@+id/notification"
+        android:name="com.example.renit.fragments.NotificationFragment"
+        android:label="fragment_notification"
+        tools:layout="@layout/fragment_notification" />
+    <fragment
+        android:id="@+id/home"
+        android:name="com.example.renit.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/login"
+        android:name="com.example.renit.Login"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" />
+    <fragment
+        android:id="@+id/newsfeed"
+        android:name="com.example.renit.fragments.NewsFeedFragment"
+        android:label="fragment_news_feed"
+        tools:layout="@layout/fragment_news_feed" />
+</navigation>
