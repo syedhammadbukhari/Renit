@@ -6,18 +6,25 @@
     android:layout_marginBottom="@dimen/dp_20"
     android:padding="@dimen/dp_5"
     >
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:layout_width="@dimen/dp_30"
-        android:layout_height="@dimen/dp_30"
-        android:id="@+id/imageview_single_layout"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textview_single_layout"
-        android:layout_below="@id/imageview_single_layout"
-        android:layout_marginTop="@dimen/dp_5"
-        android:text="shhgj"
-        />
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="@dimen/dp_50"
+                android:layout_height="@dimen/dp_50"
+                android:id="@+id/imageview_single_layout"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textview_single_layout"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/imageview_single_layout"
+                android:layout_marginTop="@dimen/dp_5"
+
+                android:text="shhgj"
+
+                />
+
 
 </RelativeLayout>

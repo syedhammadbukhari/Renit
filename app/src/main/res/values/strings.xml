@@ -59,6 +59,8 @@
     </string-array>
 
     <string name="Marriage_Hall_Type_String">Choose Dress Type</string>
+    <string name="email_has_been_sent_to_you">Email has been sent to you</string>
+    <string name="go_back_to_login">Go back to Login</string>
 
     <string-array name="Marriage_Hall_Type_Array">
         <item>Marquee</item>

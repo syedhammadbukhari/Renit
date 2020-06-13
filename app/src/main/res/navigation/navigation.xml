@@ -24,7 +24,11 @@
         android:id="@+id/home"
         android:name="com.example.renit.fragments.HomeFragment"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_home_to_categoriesAdPostFragment"
+            app:destination="@id/categoriesAdPostFragment" />
+    </fragment>
     <fragment
         android:id="@+id/login"
         android:name="com.example.renit.Login"
@@ -34,5 +38,22 @@
         android:id="@+id/newsfeed"
         android:name="com.example.renit.fragments.NewsFeedFragment"
         android:label="fragment_news_feed"
-        tools:layout="@layout/fragment_news_feed" />
+        tools:layout="@layout/fragment_newsfeed" />
+    <fragment
+        android:id="@+id/categoriesAdPostFragment"
+        android:name="com.example.renit.fragments.CategoriesAdPostFragment"
+        android:label="fragment_categories__ad_post"
+        tools:layout="@layout/fragment_categories__ad_post" >
+        <action
+            android:id="@+id/action_categoriesAdPostFragment_to_subCategoryFragment"
+            app:destination="@id/subCategoryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/subCategoryFragment"
+        android:name="com.example.renit.fragments.SubCategoryFragment"
+        android:label="SubCategoryFragment" >
+        <argument
+            android:name="category"
+            app:argType="com.example.renit.models.Category" />
+    </fragment>
 </navigation>

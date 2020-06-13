@@ -4,10 +4,11 @@
     <color name="colorPrimaryDark">#000000</color>
     <color name="colorAccent">#D81B60</color>
     <color name="facebook">#3b5998</color>
-    <color name="google">#DB4437</color>
+    <color name="google">#AF3B2B</color>
     <color name="textColor">#666666</color>
     <color name="tabletextcolor">#fff</color>
     <color name="tabindicatorcolor">#2d2d2d</color>
+    <color name="email_password_textView_color">#fcf9f9</color>
     <color name="colortop">#A6ACAF  </color>
    <!-- <color name="bg_color">#857B65</color> -->
 </resources>

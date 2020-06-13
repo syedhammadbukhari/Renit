@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
+<LinearLayout
+    android:layout_height="match_parent"
+     android:layout_width="match_parent">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -43,9 +44,17 @@
             android:layout_height="0dp"
             android:layout_weight="0.35">
 
+            <com.github.jlmd.animatedcircleloadingview.AnimatedCircleLoadingView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/circle_loading_view"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_centerInParent="true"
+                />
+
 
             <EditText
-                android:id="@+id/mobileNumberOrEmail_login"
+                android:id="@+id/Emaillogin"
                 style="@style/TextAppearance.AppCompat"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -55,15 +64,17 @@
                 android:drawableLeft="@drawable/account"
                 android:drawablePadding="10dp"
                 android:fontFamily="@font/lato_light"
-                android:hint="Email or phone"
-                android:paddingBottom="20dp" />
+                android:hint="Email"
+                android:paddingBottom="20dp"
+                android:inputType="textEmailAddress"
+                />
 
             <EditText
                 android:id="@+id/password_login"
                 style="@style/TextAppearance.AppCompat"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/mobileNumberOrEmail_login"
+                android:layout_below="@id/Emaillogin"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="@dimen/dp_30"
                 android:layout_marginRight="20dp"
@@ -72,11 +83,12 @@
                 android:fontFamily="@font/lato_light"
                 android:hint="@string/password"
                 android:inputType="textPassword"
-                android:paddingBottom="20dp" />
+                android:paddingBottom="20dp"
+                />
 
 
             <Button
-                android:id="@+id/signIn_btn_login"
+                android:id="@+id/login_btn_login"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/password_login"
@@ -88,100 +100,42 @@
                 android:textColor="@android:color/white"
                 android:textSize="@dimen/sp_18" />
 
+        </RelativeLayout>
+
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/signIn_btn_login"
-                android:layout_alignRight="@id/signIn_btn_login"
-                android:layout_marginTop="@dimen/dp_5"
+                android:layout_marginTop="@dimen/dp_10"
                 android:layout_marginRight="@dimen/dp_10"
                 android:fontFamily="@font/lato_regular"
-                android:text="@string/forget_password" />
-
-        </RelativeLayout>
+                android:text="@string/forget_password"
+                android:gravity="right"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:paddingRight="@dimen/dp_20"
+                android:id="@+id/forget_password_login"
+                />
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="0.35">
+            android:layout_weight="0.35"
+            >
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:weightSum="3" />
-
-            <RelativeLayout
-                android:id="@+id/continueWith_layout"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/dp_30"
-                android:layout_marginTop="@dimen/dp_20"
-                android:layout_marginRight="@dimen/dp_30"
-                android:gravity="center_vertical">
-
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_marginTop="10dp"
-                    android:background="@color/textColor" />
-
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerInParent="true"
-                    android:background="@android:color/white"
-                    android:fontFamily="@font/lato_light"
-                    android:paddingLeft="5dp"
-                    android:paddingRight="5dp"
-                    android:text="@string/or_continue_with"
-                    android:textColor="@color/textColor" />
-
-
-            </RelativeLayout>
-
-            <LinearLayout
-                android:id="@+id/facebook_google"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/continueWith_layout"
-                android:layout_marginTop="20dp"
-                android:gravity="center_horizontal"
+                android:weightSum="3"
                 android:orientation="horizontal"
-                android:weightSum="3">
 
-                <Button
-                    android:layout_width="0dp"
-                    android:layout_height="40dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/facebook_button"
-                    android:text="@string/facebook"
-                    android:textColor="@color/facebook" />
-
-                <View
-                    android:layout_width="0dp"
-                    android:layout_height="0dp"
-                    android:layout_weight="0.5" />
-
-                <Button
-                    android:layout_width="0dp"
-                    android:layout_height="40dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/google_button"
-                    android:text="@string/google"
-                    android:textColor="@color/google" />
-
-
-            </LinearLayout>
+                />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/facebook_google"
-                android:layout_marginTop="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_10"
                 android:gravity="center"
-                android:orientation="horizontal">
+                android:id="@+id/line3"
+               >
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -190,20 +144,61 @@
                     android:fontFamily="@font/lato_light"
                     android:text="Don't have an account?"
                     android:textColor="@color/textColor"
-                    android:textSize="12sp" />
+                    android:textSize="@dimen/sp_18" />
 
                 <TextView
+                    android:id="@+id/signup_login"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:fontFamily="@font/lato_regular"
                     android:text=" Sign up"
-                    android:id="@+id/signup_login_"/>
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/sp_18" />
 
             </LinearLayout>
 
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/line3"
+                >
+
+            <Button
+                android:id="@+id/btn_fb_login"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/facebook_button"
+                android:backgroundTint="@color/facebook"
+                android:text="Continue with Facebook"
+                android:textColor="@android:color/white"
+                android:drawableLeft="@drawable/facebook_2"
+                android:padding="@dimen/dp_10"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp_20"
+                android:drawablePadding="@dimen/dp_40"
+                />
+
+
+            <Button
+                android:id="@+id/btn_gmail_login"
+                android:layout_below="@id/btn_fb_login"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/google_button"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="Continue with Google "
+                android:textColor="@android:color/white"
+                android:backgroundTint="@color/google"
+                android:padding="@dimen/dp_10"
+                android:layout_centerHorizontal="true"
+                />
+
+            </RelativeLayout>
 
         </RelativeLayout>
 
 
     </LinearLayout>
+</LinearLayout>
 </layout>
