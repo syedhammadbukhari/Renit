@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<layout>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
@@ -31,9 +32,9 @@
         <EditText
             android:padding="20dp"
             android:textSize="25sp"
-            android:id="@+id/titlecateringform_id"
+            android:id="@+id/titleFormPostCategories_id"
             android:layout_weight="0.7"
-            android:hint="Title for catering company"
+            android:hint="Title of your Product"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
@@ -49,27 +50,51 @@
             android:layout_weight="0.2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Area"
+            android:text="Price"
             android:textSize="25sp"
             android:layout_marginTop="5dp"
             />
         <EditText
             android:padding="20dp"
             android:textSize="25sp"
-            android:id="@+id/detailcateringform_id"
+            android:id="@+id/priceFormPostCategories_id"
             android:layout_weight="0.7"
-            android:hint="Area of the ground"
+            android:hint="Price of your Product"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            />
 
 
     </LinearLayout>
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Type of catering"
-        android:layout_marginLeft="10dp"
-        android:textSize="25sp"/>
+        android:weightSum="1"
+        android:padding="10dp"
+        >
+        <TextView
+            android:layout_weight="0.2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quality"
+            android:textSize="25sp"
+            android:layout_marginTop="5dp"
+            />
+        <EditText
+            android:padding="20dp"
+            android:textSize="25sp"
+        android:id="@+id/qualityFormPostCategories_id"
+            android:layout_weight="0.7"
+            android:hint="Quality in (5 to 10)/10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            />
+
+
+    </LinearLayout>
+
     <TextView
         android:layout_marginLeft="10dp"
         android:layout_width="wrap_content"
@@ -81,13 +106,13 @@
     <EditText
         android:padding="20dp"
         android:textSize="25sp"
-        android:id="@+id/descriptioncateringform_id"
+        android:id="@+id/descriptionBadmintonGround_id"
         android:layout_width="match_parent"
-        android:hint="Key features for catering company"
+        android:hint="Key features of your Product"
         android:layout_height="150dp"/>
 
     <Button
-        android:id="@+id/next_btn_catering_id"
+        android:id="@+id/next_btn_badminton_ground_id"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -96,8 +121,9 @@
         android:text="Next"
         android:textColor="@android:color/white"
         android:textSize="25sp"
-
         />
 
 
+
 </LinearLayout>
+</layout>
