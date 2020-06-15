@@ -19,6 +19,7 @@ class NewsfeedMyViewHolder(inflater: LayoutInflater, parent: ViewGroup): Recycle
     private var productImage: ImageView?=null
     private var productTitle: TextView?=null
     private var productPrice: TextView?=null
+    private var productDescription:TextView?=null
     init{
         profilePic = itemView.findViewById(R.id.imageView_newsfeed_home)
         userName=itemView.findViewById(R.id.UserName_newsfeed_home)
@@ -26,6 +27,7 @@ class NewsfeedMyViewHolder(inflater: LayoutInflater, parent: ViewGroup): Recycle
         productImage=itemView.findViewById(R.id.imageView2_newsfeed_home)
         productTitle=itemView.findViewById(R.id.productTitle_newsfeed_home)
         productPrice=itemView.findViewById(R.id.productPrice_newsfeed_home)
+        productDescription = itemView.findViewById(R.id.productDescription_newsfeed_home)
     }
     fun bind(ads: Newsfeed){
         Picasso.get().load(ads.Profile_pic).fit().into(productImage)
@@ -33,6 +35,7 @@ class NewsfeedMyViewHolder(inflater: LayoutInflater, parent: ViewGroup): Recycle
         Picasso.get().load(ads.ProductImages).fit().into(productImage)
         productTitle?.text=ads.ProductTitle
         productPrice?.text=ads.ProductPrice
+        productDescription?.text = ads.ProductDescription
 
     }
 
