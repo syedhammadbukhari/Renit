@@ -107,7 +107,7 @@ class Login : Fragment() {
 
 
     private fun emailVerified():Boolean{
-        return currentUser!!.isEmailVerified
+        return currentUser.isEmailVerified
     }
 
 /*    private fun isValid():Boolean{

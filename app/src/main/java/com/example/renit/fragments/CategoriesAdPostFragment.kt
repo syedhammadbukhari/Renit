@@ -37,7 +37,6 @@ class CategoriesAdPostFragment : Fragment(), CategoriesAdPostAdapter.AdPostCateg
 
 
         var categorylist = ArrayList<Category>()
-        var subCategorylist = ArrayList<SubCategory>()
 
 /*            Categorylist.add(
                 Category(
