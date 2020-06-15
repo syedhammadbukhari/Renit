@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:id="@+id/newsfeed" android:icon="@drawable/newsfeed" android:title="News Feed"   />
+    <item android:id="@+id/newsfeed" android:icon="@drawable/newsfeed" android:title="NewsFeed"   />
     <item android:id="@+id/chat" android:icon="@drawable/chat" android:title="Chat"/>
     <item android:id="@+id/home" android:icon="@drawable/home" android:title="Home"/>
     <item android:id="@+id/notification" android:icon="@drawable/notification" android:title="Notification"/>
